@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Motocross</title>
+</head>
+<body>
+    <header>
+        <h2>SONHO DE CONSUMO</h2>
+        <ul>
+            <li><a href="index.html" class="botoes">Home</a></li>
+            <li><a href="contato.html" class="botoes">Contato</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <h2>Moto</h2>
+        <p>Esse site dará algumas informações sobre motos de trilha.</p>
+        <h2>Aqui estão alguns exemplos</h2>
+
+        <!-- Search bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Pesquise por modelo...">
+            <button onclick="searchTable()">Pesquisar</button>
+        </div>
+
+        <table id="motorcycleTable">
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="ktm-exc-250.html" class="link">1. KTM EXC 250</a></td>
+                    <td>A KTM EXC 250 é uma moto de trilha conhecida por sua potência e versatilidade. Equipada com um motor de 249 cc, ela oferece excelente desempenho em terrenos acidentados. Seu chassi e suspensões são projetados para enfrentar trilhas desafiadoras com agilidade e controle.</td>
+                </tr>
+                <tr>
+                    <td><a href="yamaha-ttr-230.html" class="link">2. Yamaha TTR 230</a></td>
+                    <td>A Yamaha TTR 230 é uma escolha popular para pilotos que buscam uma moto de trilha confiável e fácil de pilotar. Com um motor de 223 cc, ela oferece uma combinação de potência e manuseio suave. Seu design robusto e suspensões ajustáveis a tornam adequada para iniciantes e pilotos experientes.</td>
+                </tr>
+                <tr>
+                    <td><a href="yamaha-wr-450-f.html" class="link">3. Yamaha WR 450 F</a></td>
+                    <td>A Yamaha WR 450 F é uma moto de trilha mais robusta, projetada para competições de enduro. Seu motor de 449 cc oferece potência impressionante, enquanto o sistema de suspensão e freios proporciona controle em terrenos variados.</td>
+                </tr>
+                <tr>
+                    <td><a href="kawasaki-klx-110r.html" class="link">4. Kawasaki KLX 110R</a></td>
+                    <td>A Kawasaki KLX 110R é uma opção mais leve e compacta, ideal para pilotos iniciantes ou jovens. Com um motor de 112 cc, ela é fácil de manobrar e oferece diversão nas trilhas.</td>
+                </tr>
+                <!-- Add more motorcycles here -->
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Avalie nosso atendimento:</h2>
+        <div id="starRating">
+            <span data-star="1" class="star">&#9733;</span>
+            <span data-star="2" class="star">&#9733;</span>
+            <span data-star="3" class="star">&#9733;</span>
+            <span data-star="4" class="star">&#9733;</span>
+            <span data-star="5" class="star">&#9733;</span>
+        </div>
+        <p id="ratingMessage"></p>
+        
+    </section>
+    <!-- Link to external JavaScript -->
+    <script src="javascript.js"></script>
+
+</body>
+</html>

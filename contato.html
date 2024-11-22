@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo das Pizzas - Contato</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Mundo das Pizzas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="botoes">Home</a></li>
+                <li><a href="contato.html" class="botoes">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contato</h2>
+            <form id="contactForm">
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Mensagem:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="confirmationMessage" style="display: none;"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mundo das Pizzas</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
